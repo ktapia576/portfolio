@@ -1,0 +1,23 @@
+{
+  "name": "digital-ocean-server",
+  "version": "1.0.0",
+  "description": "Website hosted by Digital Ocean",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktapia576/digital-ocean-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktapia576/digital-ocean-server/issues"
+  },
+  "homepage": "https://github.com/ktapia576/digital-ocean-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
