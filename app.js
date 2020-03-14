@@ -18,7 +18,7 @@ app.get('/', (req,res)=>{
 })
 
 app.get('*', (req,res)=>{
-    res.send('Not Found', 404);
+    res.status(404).send('Not Found');
 })
 
 app.listen(port, ()=>console.log(`Nodejs is running on ${port}`))
