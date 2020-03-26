@@ -1,6 +1,9 @@
 # nodemon json
 nodemon.json
 
+# service file
+app.service
+
 # Logs
 logs
 *.log
