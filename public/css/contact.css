@@ -18,7 +18,7 @@
 }
   
 .icon-bar a i {
-    margin-left: 15px;
+    margin-left: 17px;
 }
 
 .icon-bar a:hover {
@@ -41,3 +41,20 @@
 .resume {
     background: #565f69;
 }
+
+@media only screen and (min-width: 1930px)  {
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 30px 30px 30px 8px;
+        transition: all 0.3s ease;
+        text-align: right;
+        color: white;
+        font-size: 20px;
+        transform: translate(-85px, 0px);
+    }
+
+    .icon-bar a i {
+        margin-left: 25px;
+    }
+} 
