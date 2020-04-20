@@ -50,11 +50,11 @@
         transition: all 0.3s ease;
         text-align: right;
         color: white;
-        font-size: 20px;
-        transform: translate(-85px, 0px);
+        font-size: 2em;
+        transform: translate(-135px, 0px);
     }
 
     .icon-bar a i {
         margin-left: 25px;
     }
-} 
+}

@@ -1,9 +1,14 @@
 doctype html
 html
-    include includes/header.pug
-    body
-        nav.navbar.navbar-expand-sm.navbar-dark(style="background-color: #34baeb;")
-            a.navbar-brand(href='/') Kevin Tapia
+    include includes/head.pug
+    body.bg-dark
         include includes/contact.pug
-        h1 This is my website!
-        include includes/footer.pug
+        .container-fluid
+            .row
+                .col-12.p-0    
+                    include includes/header.pug
+                    .min-vh-100.text-center.text-light.m-0.d-flex.flex-column.justify-content-center
+                        h1 This is my website!
+                        p Hey this is a website
+                        p Made by your boy Kev
+                    include includes/footer.pug
