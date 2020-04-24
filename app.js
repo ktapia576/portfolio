@@ -17,6 +17,12 @@ app.get('/', (req,res)=>{
     });
 })
 
+app.get('/test', (req,res)=>{
+    res.render('test', { 
+        title:'Test Page'
+    });
+})
+
 app.get('*', (req,res)=>{
     res.status(404).send('Not Found');
 })

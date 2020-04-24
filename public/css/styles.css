@@ -1,0 +1,13 @@
+.min-vh-95 {
+    min-height: 95vh;
+}
+
+/* (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    h1 {font-size:3.5rem;}  
+}
+
+/* (large desktops, 1930px and up) */
+@media (min-width: 1930px) {  
+    h1 {font-size:5rem;}  
+}
