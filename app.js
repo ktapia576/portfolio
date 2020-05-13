@@ -17,6 +17,13 @@ app.get('/', (req,res)=>{
     });
 })
 
+app.get('/projects', (req,res)=>{
+    res.render('projects', { 
+        title:'Projects'
+    });
+})
+
+
 app.get('/test', (req,res)=>{
     res.render('test', { 
         title:'Test Page'
