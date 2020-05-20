@@ -23,7 +23,6 @@ app.get('/projects', (req,res)=>{
     });
 })
 
-
 app.get('/test', (req,res)=>{
     res.render('test', { 
         title:'Test Page'
