@@ -1,3 +1,7 @@
+a:focus {
+    outline: none;
+}
+
 .min-vh-95 {
     min-height: 95vh;
 }
