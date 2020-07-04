@@ -5,7 +5,7 @@ let board = [
   [0,0,0]
 ];
 
-let bot = 1;
+let ai = 1;
 let human = -1;
 
 let w;
@@ -13,7 +13,7 @@ let h;
 
 // Game States
 let winner = null;  // If there is winner game ends
-let currentPlayer = bot;
+let currentPlayer = ai;
 
 function setup() {
   createCanvas(400, 400);
@@ -21,37 +21,20 @@ function setup() {
   w = width / 3;  // get width divided into three parts
   h = height / 3;  // get height divided into three parts
 
-  aiMove();
+  firstMove();  // random first move for ai
   noLoop();
 }
 
-// function randomMove() {
-//   if (currentPlayer == bot && winner === null) {
-//     // Only when bot's turn
-//     let valid = false; 
+function firstMove() {
+  let row = Math.floor(Math.random() * 3); // returns a random integer from 0 to 2 
+  let col = Math.floor(Math.random() * 3);
 
-//     // Keep looping until empty space found
-//     while(!valid){
-//       let row = Math.floor(Math.random() * 3); // returns a random integer from 0 to 2 
-//       let col = Math.floor(Math.random() * 3);
+  board[row][col] = ai;
+        
+  redraw();
 
-//       // If turn is valid (space not filled)
-//       if (board[row][col] == 0) {
-//         board[row][col] = bot;
-        
-//         // Check if move wins
-//         checkWinner();
-//         redraw();
-        
-//         if(winner === null) {
-//           currentPlayer = human;
-//         }
-        
-//         valid = true;  // set true to break out of loop
-//       }
-//     }
-//   }
-// }
+  currentPlayer = human;
+}
 
 function mouseClicked() {
   if (currentPlayer == human && winner === null) {
@@ -68,7 +51,7 @@ function mouseClicked() {
       redraw();
       
       if(winner === null) {
-        currentPlayer = bot;
+        currentPlayer = ai;
         aiMove();
       }
     }
@@ -76,8 +59,6 @@ function mouseClicked() {
 }
 
 function checkWinner() {
-  let openSpots;
-
   // Check Horizontal
   for (let i = 0; i < 3; i++) {
     // Add up row to see if winner. -3 means O wins. +3 means X wins. neither means no one wins
@@ -88,7 +69,7 @@ function checkWinner() {
         winner = "human";
         break;
       case 3:
-        winner = "bot";
+        winner = "ai";
     }
   }
 
@@ -102,7 +83,7 @@ function checkWinner() {
         winner = "human";
         break;
       case 3:
-        winner = "bot";
+        winner = "ai";
     }
   }
 
@@ -115,7 +96,7 @@ function checkWinner() {
       winner = "human";
       break;
     case 3:
-      winner = "bot";
+      winner = "ai";
   }
 
   switch(diagnol2) {
@@ -123,11 +104,13 @@ function checkWinner() {
       winner = "human";
       break;
     case 3:
-      winner = "bot";
+      winner = "ai";
   }
 
   // Check if Tie. If there is 0, there is open spot left. (Multiply all nums)
   let counter = 0;
+  let openSpots;
+
   for (let i = 0; i < 3; i++) {
     let num = board[i][0] * board[i][1] * board[i][2];
 

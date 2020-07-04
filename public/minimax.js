@@ -8,7 +8,7 @@ function aiMove() {
             // If turn is valid (space not filled)
             if (board[i][j] == 0) {
                 // Begin minimax
-                board[i][j] = bot;
+                board[i][j] = ai;
                 let score = minimax(0, false);
                 board[i][j] = 0;
 
@@ -20,7 +20,7 @@ function aiMove() {
         }
     }
 
-    board[move.i][move.j] = bot;
+    board[move.i][move.j] = ai;
 
     // Check if move wins
     checkWinner();
@@ -32,7 +32,7 @@ function aiMove() {
 }
 
 let scores = {
-    "bot" : 10,
+    "ai" : 10,
     "human" : -10,
     "tie" : 0
 }
@@ -56,7 +56,7 @@ function minimax(depth, isMaximizing) {
                 // If turn is valid (space not filled)
                 if (board[i][j] == 0) {
                     // Begin minimax
-                    board[i][j] = bot;
+                    board[i][j] = ai;
                     let score = minimax(depth + 1, false);
                     board[i][j] = 0;
 
