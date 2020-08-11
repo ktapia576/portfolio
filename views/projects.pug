@@ -8,7 +8,7 @@ html
                 .row
                     .col-md-4
                         .card.mb-4.shadow
-                            img.card-img-top(src="https://gcs.thesouthafrican.com/2020/05/7be56a32-bethesda-releases-new-roadmap-of-fallout-76-1-1200x858.jpg" alt="Fallout Image")
+                            img.card-img-top.border-bottom.pointer(src="img/chatbot.png" alt="Chatbot Image" data-toggle="modal" data-target="#chatbotModal")
                             .card-body
                                 p.card-text Mental Health Chatbot created during Senior Research. This chatbot assitant will help raise awareness and provide tools for users.
                                 .d-flex.justify-content-between.align-items-center
@@ -42,5 +42,16 @@ html
                                         button.btn.btn-sm.btn-outline-secondary(type="button") Demo
                                         button.btn.btn-sm.btn-outline-secondary(type="button") Code
                                     small.text-muted 9 mins
+        //- Modal for image preview of Chatbot
+        .modal.fade.bd-example-modal-lg(id="chatbotModal" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body
+                        img.img-fluid(src="img/chatbot.png" alt="Chatbot Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/footer.pug
         include includes/contact.pug

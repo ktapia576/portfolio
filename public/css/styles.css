@@ -2,6 +2,15 @@ a:focus {
     outline: none;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+/* Overwrite modal-lg from 800px to 80% of viewport */
+.modal-lg {
+    max-width: 80%;
+}
+
 .min-vh-95 {
     min-height: 95vh;
 }
