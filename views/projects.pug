@@ -17,12 +17,9 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/Chatbot-Mental-Health" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
-                            svg.bd-placeholder-img.card-img-top(width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail")
-                                title Placeholder
-                                rect(width="100%" height="100%" fill="#55595c")
-                                text(x="50%" y="50%" fill="#eceeef" dy=".3em") Thumbnail
+                            img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioModal")
                             .card-body
-                                p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                p.card-text This portfolio website was built from the ground up using a Digital Ocean Droplet. Hence, it needed to have server configurations and networking to be setup for it to work.
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
                                         button.btn.btn-sm.btn-outline-secondary(type="button") Demo
@@ -48,6 +45,17 @@ html
                             span &times;
                     .modal-body
                         img.img-fluid(src="img/chatbot.png" alt="Chatbot Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image preview of Portfolio
+        .modal.fade.bd-example-modal-lg(id="portfolioModal" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body
+                        img.img-fluid(src="img/portfolio.png" alt="Portfolio Image")
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/footer.pug
