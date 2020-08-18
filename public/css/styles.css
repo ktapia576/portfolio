@@ -6,6 +6,10 @@ a:focus {
     cursor: pointer;
 }
 
+.text-grey {
+    color: #bfbfbf;
+}
+
 /* Overwrite modal-lg from 800px to 80% of viewport */
 .modal-lg {
     max-width: 80%;
