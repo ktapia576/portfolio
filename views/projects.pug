@@ -10,7 +10,8 @@ html
                         .card.mb-4.shadow
                             img.card-img-top.border-bottom.pointer(src="img/chatbot.png" alt="Chatbot Image" data-toggle="modal" data-target="#chatbotModal")
                             .card-body
-                                p.card-text Mental Health Chatbot created during Senior Research. This chatbot assitant will help raise awareness and provide tools for users.
+                                p.card-text.text-justify Mental Health Chatbot created during Senior Research. This chatbot assitant will help raise awareness and provide tools for users.
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#chatbotModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://chatbot.kevintapia.com" target="_blank" role="button") Demo
@@ -19,7 +20,8 @@ html
                         .card.mb-4.shadow-sm
                             img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioModal")
                             .card-body
-                                p.card-text This portfolio website was built from the ground up using a Digital Ocean Droplet. Hence, it needed to have server configurations and networking to be setup for it to work.
+                                p.card-text.text-justify This portfolio website was built from the ground up using a Digital Ocean Droplet. Server configurations and networking had to be setup for it to work properly.
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#portfolioModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://www.kevintapia.com" target="_blank" role="button") Demo
@@ -44,7 +46,12 @@ html
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
                     .modal-body
-                        img.img-fluid(src="img/chatbot.png" alt="Chatbot Image")
+                        .container
+                            .row
+                                .col-8
+                                    img.img-fluid(src="img/chatbot2.png" alt="Chatbot Image")
+                                .col
+                                    p test of the sidebar test of the sidebar test of the sidebar test of the sidebar test of the sidebar
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Portfolio

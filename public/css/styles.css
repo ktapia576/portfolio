@@ -12,7 +12,7 @@ a:focus {
 
 /* Overwrite modal-lg from 800px to 80% of viewport */
 .modal-lg {
-    max-width: 80%;
+    max-width: 70%;
 }
 
 .min-vh-95 {
