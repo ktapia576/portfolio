@@ -28,16 +28,15 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
-                            svg.bd-placeholder-img.card-img-top(width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail")
-                                title Placeholder
-                                rect(width="100%" height="100%" fill="#55595c")
-                                text(x="50%" y="50%" fill="#eceeef" dy=".3em") Thumbnail
+                            img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#fivePDModal")
                             .card-body
-                                p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                p.card-text This is a GTA V Mod I have made for users to download and play online. This mod has over 1000+ downloads and was developed using the FivePD API.
+                                            |  Click more info for a video preview of the mod in action.
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#fivePDModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
-                                        button.btn.btn-sm.btn-outline-secondary(type="button") Demo
-                                        button.btn.btn-sm.btn-outline-secondary(type="button") Code
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
         //- Modal for image preview of Chatbot
         .modal.fade.bd-example-modal-lg(id="chatbotModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
@@ -71,6 +70,28 @@ html
                             .row
                                 .col-8.border-right
                                     img.img-fluid(src="img/portfolio2.png" alt="Portfolio Image")
+                                .col.ml-3
+                                    .row.h-15
+                                        p test of the sidebar test of the sidebar test of the sidebar test of the sidebar test of the sidebar
+                                    .row.mt-1
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
+                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
+                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image preview of FivePD Mod
+        .modal.fade.bd-example-modal-lg(id="fivePDModal" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body
+                        .container
+                            .row
+                                .col-8.border-right
+                                    //- Add video instead of image for viewing. 
+                                    img.img-fluid(src="img/fivepdapi.png" alt="FivePD Image")
                                 .col.ml-3
                                     .row.h-15
                                         p test of the sidebar test of the sidebar test of the sidebar test of the sidebar test of the sidebar
