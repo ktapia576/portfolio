@@ -8,6 +8,16 @@ html
                 .row
                     .col-md-4
                         .card.mb-4.shadow
+                            img.card-img-top.border-bottom.pointer(src="img/visualization.png" alt="Visualization Image" data-toggle="modal" data-target="#visualizationModal")
+                            .card-body
+                                p.card-text.text-justify Data Visualization Web application created to utilize different charts to show patterns or trends with the data given.
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#visualizationModal") More info...
+                                .d-flex.justify-content-end.align-items-center
+                                    .btn-group
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://visualization.kevintapia.com" target="_blank" role="button") Demo
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
+                    .col-md-4
+                        .card.mb-4.shadow
                             img.card-img-top.border-bottom.pointer(src="img/chatbot.png" alt="Chatbot Image" data-toggle="modal" data-target="#chatbotModal")
                             .card-body
                                 p.card-text.text-justify Mental Health Chatbot created during Senior Research. This chatbot assitant will help raise awareness and provide tools for users.
@@ -107,6 +117,31 @@ html
                                 .col.ml-3
                                     .row.mb-2
                                         h4 Portfolio Website
+                                    .row.h-15
+                                        ul.m-0.p-0
+                                            li.d-inline.bg-secondary.rounded.text-white.p-1.mr-1 JavaScript
+                                            li.d-inline.bg-secondary.rounded.text-white.p-1.mr-1 HTML5
+                                    .row.mt-1
+                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
+                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
+                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image preview of Visualization Web Application
+        .modal.fade.bd-example-modal-lg(id="visualizationModal" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body
+                        .container
+                            .row
+                                .col-8.border-right
+                                    img.img-fluid(src="img/visualization.png" alt="Visualization Site Image")
+                                .col.ml-3
+                                    .row.mb-2
+                                        h4 Data Visualization Web Application
                                     .row.h-15
                                         ul.m-0.p-0
                                             li.d-inline.bg-secondary.rounded.text-white.p-1.mr-1 JavaScript
