@@ -2,8 +2,8 @@
     display: none;
 }
 
-/* For desktop tablets or desktops larger than 768px */
-@media only screen and (min-width: 768px) {
+/* For desktop tablets or desktops larger than 992px (when hamburger menu disappears) */
+@media only screen and (min-width: 992px) {
     .icon-bar {
         display: block;
         position: fixed;
