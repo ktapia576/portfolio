@@ -23,8 +23,8 @@ a:focus {
     min-height: 95vh;
 }
 
-h1 {font-size:2.5rem;}
-h4 {font-size:.6rem;} 
+h1 {font-size:3rem;}
+h4 {font-size:1rem;} 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
