@@ -1,0 +1,36 @@
+doctype html
+html
+    include includes/head.pug
+    body.bg-dark
+        include includes/header.pug
+        .container
+            h3.text-center.text-white.text-uppercase Contacts
+            p.text-center.text-white.w-75.m-auto Feel free to check out my links or to get in touch with me!
+            section.px-4(id="contact")
+                .row
+                    .col-sm-12.col-md-6.col-lg-3.my-5
+                        .card.border-0
+                            .card-body.text-center
+                                i.fab.fa-linkedin.fa-5x.mb-3(aria-hidden="true")
+                                h4.text-uppercase.mb-5 Linkedin
+                                a.btn.btn-dark.contact(href='https://www.linkedin.com/in/kevin-tapia/' target='_blank') Visit it!
+                    .col-sm-12.col-md-6.col-lg-3.my-5
+                        .card.border-0
+                            .card-body.text-center
+                                i.fab.fa-github.fa-5x.mb-3(aria-hidden="true")
+                                h4.text-uppercase.mb-5 Github
+                                a.btn.btn-dark.contact(href='https://www.github.com/ktapia576' target='_blank')  Go There!
+                    .col-sm-12.col-md-6.col-lg-3.my-5
+                        .card.border-0
+                            .card-body.text-center
+                                i.far.fa-envelope.fa-5x.mb-3(aria-hidden="true")
+                                h4.text-uppercase.mb-5 Email
+                                a.btn.btn-dark.contact(href='mailto:ktapia576@hotmail.com' target='_blank')  Email me!
+                    .col-sm-12.col-md-6.col-lg-3.my-5
+                        .card.border-0
+                            .card-body.text-center
+                                i.far.fa-file-alt.fa-5x.mb-3(aria-hidden="true")
+                                h4.text-uppercase.mb-5 Resume
+                                a.btn.btn-dark.contact(href='/Kevin-Tapia-Resume.pdf' target='_blank')  Open It!
+        include includes/footer.pug
+        include includes/contact-bar.pug

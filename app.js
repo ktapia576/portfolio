@@ -23,6 +23,12 @@ app.get('/projects', (req,res)=>{
     });
 })
 
+app.get('/contact', (req,res)=>{
+    res.render('contact', { 
+        title:'Contact'
+    });
+})
+
 app.get('/game', (req,res)=>{
     res.render('game', { 
         title:'Game'
