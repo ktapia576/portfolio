@@ -10,7 +10,7 @@ html
                         .card.mb-4.shadow
                             img.card-img-top.border-bottom.pointer(src="img/visualization.png" alt="Visualization Image" data-toggle="modal" data-target="#visualizationModal")
                             .card-body
-                                p.card-text.text-justify Data Visualization Web application created to utilize different charts to show patterns or trends with the data given.
+                                p.card-text.text-center.font-weight-bold Data Visualization Web Application
                                 btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#visualizationModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
@@ -18,19 +18,19 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow
-                            img.card-img-top.border-bottom.pointer(src="img/chatbot.png" alt="Chatbot Image" data-toggle="modal" data-target="#chatbotModal")
+                            img.card-img-top.border-bottom.pointer(src="img/assistant.png" alt="Virtual Assitant Image" data-toggle="modal" data-target="#assistantModal")
                             .card-body
-                                p.card-text.text-justify Mental Health Chatbot created ... This chatbot assitant will help raise awareness and provide tools for users.
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#chatbotModal") More info...
+                                p.card-text.text-center.font-weight-bold Virtual Assistant
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#assistantModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://chatbot.kevintapia.com" target="_blank" role="button") Demo
-                                        a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/Chatbot-Mental-Health" target="_blank" role="button") Code
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/Virtual-Assistant-Mental-Health" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
                             img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioModal")
                             .card-body
-                                p.card-text.text-justify This portfolio website was built from the ground up using a Digital Ocean Droplet. Server configurations and networking had to be setup for it to work properly.
+                                p.card-text.text-center.font-weight-bold Portfolio Website
                                 btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#portfolioModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
@@ -38,17 +38,16 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
-                            img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#fivePDModal")
+                            img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#gtaModModal")
                             .card-body
-                                p.card-text.text-justify This is a GTA V Mod I have developed for users to download. The mod has over 1000+ downloads and was developed using the FivePD API.
-                                            |  Click more info for a video preview of the mod in action.
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#fivePDModal") More info...
+                                p.card-text.text-center.font-weight-bold GTA V Mod
+                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#gtaModModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
-        //- Modal for image preview of Chatbot
-        .modal.fade.bd-example-modal-lg(id="chatbotModal" tabindex="-1")
+        //- Modal for image preview of Virtual assistant
+        .modal.fade.bd-example-modal-lg(id="assistantModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
@@ -58,10 +57,10 @@ html
                         .container
                             .row
                                 .col-8.border-right
-                                    img.img-fluid(src="img/chatbot2.png" alt="Chatbot Image")
+                                    img.img-fluid(src="img/assistant2.png" alt="Virtual Assistant Image")
                                 .col.ml-3
                                     .row.mb-2
-                                        h4 Virtual Assistant Chatbot
+                                        h4 Virtual Assistant
                                     .row.flex-wrap
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
@@ -71,9 +70,8 @@ html
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Handlebars.js
                                     .row.mt-1
-                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
-                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
-                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                                        p Mental Health Virtual Assistant created ... This virtual assitant will help raise awareness and provide tools for users.
+                                          | Praesent 
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Portfolio
@@ -101,13 +99,12 @@ html
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Pug.js
                                     .row.mt-1
-                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
-                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
-                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                                        p This portfolio website was built from the ground up using a Digital Ocean Droplet. Server configurations and networking 
+                                          | had to be setup for it to work properly.
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of FivePD Mod
-        .modal.fade.bd-example-modal-lg(id="fivePDModal" tabindex="-1")
+        .modal.fade.bd-example-modal-lg(id="gtaModModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
@@ -121,16 +118,15 @@ html
                                     img.img-fluid(src="img/fivepdapi.png" alt="FivePD Image")
                                 .col.ml-3
                                     .row.mb-2
-                                        h4 Portfolio Website
+                                        h4 GTA V Mod
                                     .row.flex-wrap
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 C#
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
                                     .row.mt-1
-                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
-                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
-                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                                        p This is a GTA V Mod I have developed for users to download. The mod has over 1000+ downloads and was developed using the FivePD API.
+                                        |  Click more info for a video preview of the mod in action.
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Visualization Web Application
@@ -157,9 +153,8 @@ html
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Ajax/jQuery
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
                                     .row.mt-1
-                                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida ligula non ipsum semper, sed pretium ligula porta. 
-                                          | Praesent a ante metus. Quisque sed velit sed sapien convallis condimentum. Nullam at est sed ex ullamcorper varius. 
-                                          | Vivamus placerat elit tellus, in egestas sem mollis et. Pellentesque libero odio, consequat vel. 
+                                        p Data Visualization Web application created to utilize different charts to show patterns or trends with the data given. 
+                                          | Praesent a ante metus. 
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/footer.pug
