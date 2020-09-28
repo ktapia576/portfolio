@@ -11,8 +11,8 @@ html
                             img.card-img-top.border-bottom.pointer(src="img/visualization.png" alt="Visualization Image" data-toggle="modal" data-target="#visualizationModal")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Data Visualization Web Application
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#visualizationModal") More info...
-                                .d-flex.justify-content-end.align-items-center
+                                .d-flex.justify-content-between.align-items-center
+                                    btn.btn.btn-sm.btn-outline-secondary(type="button" data-toggle="modal" data-target="#visualizationModal") Info
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://visualization.kevintapia.com" target="_blank" role="button") Demo
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
@@ -21,8 +21,8 @@ html
                             img.card-img-top.border-bottom.pointer(src="img/assistant.png" alt="Virtual Assitant Image" data-toggle="modal" data-target="#assistantModal")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Virtual Assistant
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#assistantModal") More info...
-                                .d-flex.justify-content-end.align-items-center
+                                .d-flex.justify-content-between.align-items-center
+                                    btn.btn.btn-sm.btn-outline-secondary(type="button" data-toggle="modal" data-target="#assistantModal") Info
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://assistant.kevintapia.com" target="_blank" role="button") Demo
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/Virtual-Assistant-Mental-Health" target="_blank" role="button") Code
@@ -31,8 +31,8 @@ html
                             img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioModal")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Portfolio Website
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#portfolioModal") More info...
-                                .d-flex.justify-content-end.align-items-center
+                                .d-flex.justify-content-between.align-items-center
+                                    btn.btn.btn-sm.btn-outline-secondary(type="button" data-toggle="modal" data-target="#portfolioModal") Info
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://www.kevintapia.com" target="_blank" role="button") Demo
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
@@ -41,8 +41,8 @@ html
                             img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#gtaModModal")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Grand Theft Auto V Mod
-                                btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#gtaModModal") More info...
-                                .d-flex.justify-content-end.align-items-center
+                                .d-flex.justify-content-between.align-items-center
+                                    btn.btn.btn-sm.btn-outline-secondary(type="button" data-toggle="modal" data-target="#gtaModModal") Info
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
@@ -108,30 +108,25 @@ html
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
+                        h5.modal-title Grand Theft Auto V Mod
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
                     .modal-body
                         .container
-                            .row
-                                .col-8.border-right
-                                    //- Add video instead of image for viewing. 
-                                    img.img-fluid(src="img/fivepdapi.png" alt="FivePD Image")
-                                .col.ml-3
-                                    .row.mb-2
-                                        h4 GTA V Mod
-                                    .row.flex-wrap
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 C#
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
-                                    .row.mt-1.scroll.summary
-                                        p.p-2 This project came to be when a couple of my friends were always seen playing together on thier own modded Grand Theft Auto V server. 
-                                          | When I asked them what was so fun about it, they told me its because it was a roleplay server to play as cops and robbers. This led 
-                                          | me to hop on and play too! Then I realized the developers also created an API so that others can join and create mods as well. 
-                                          | Thus, I created a mod that I uploaded on thier community website for others to enjoy as my friends did on thier server. The mod now has 
-                                          | over 1,100 downloads and couldnt have been done without the help of the FivePD community.
-                                        p.p-2 Test laksjdflaskjd klajsdlk jaslkdj alkjd lkajdlkj alksjdl kadlkja lkdjlaks dlajld 
+                            .row.flex-wrap
+                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 C#
+                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
+                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
+                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
+                            .row.mt-1.summary
+                                p This project came to be when a couple of my friends were always seen playing together on thier own modded Grand Theft Auto V server. 
+                                    | When I asked them what was so fun about it, they told me its because it was a roleplay server to play as cops and robbers. This led 
+                                    | me to hop on and play too! Then I realized the developers also created an API so that others can join and create mods as well. 
+                                    | Thus, I created a mod that I uploaded on thier community website for others to enjoy as my friends did on thier server. The mod now has 
+                                    | over 1,100 downloads and couldnt have been done without the help of the FivePD community.
                     .modal-footer
+                        a.btn.btn-outline-dark(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
+                        a.btn.btn-outline-dark(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Visualization Web Application
         .modal.fade.bd-example-modal-lg(id="visualizationModal" tabindex="-1")

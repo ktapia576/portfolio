@@ -4,17 +4,7 @@
 
 .pointer {cursor: pointer;}
 
-.scroll {
-    height:40vh;
-    overflow-y: scroll;
-}
-
 .text-grey {color: #bfbfbf;}
-
-/* Overwrite modal-lg from 800px to 80% of viewport */
-.modal-lg {
-    max-width: 70% !important;
-}
 
 .h-15 {
     height: 15% !important;
