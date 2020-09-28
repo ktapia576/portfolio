@@ -40,7 +40,7 @@ html
                         .card.mb-4.shadow-sm
                             img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#gtaModModal")
                             .card-body
-                                p.card-text.text-center.font-weight-bold GTA V Mod
+                                p.card-text.text-center.font-weight-bold Grand Theft Auto V Mod
                                 btn.btn.btn-link.text-muted.pointer.p-0(data-toggle="modal" data-target="#gtaModModal") More info...
                                 .d-flex.justify-content-end.align-items-center
                                     .btn-group
@@ -124,9 +124,13 @@ html
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
-                                    .row.mt-1
-                                        p This is a GTA V Mod I have developed for users to download. The mod has over 1000+ downloads and was developed using the FivePD API.
-                                        |  Click more info for a video preview of the mod in action.
+                                    .row.mt-1.scroll.summary
+                                        p.p-2 This project came to be when a couple of my friends were always seen playing together on thier own modded Grand Theft Auto V server. 
+                                          | When I asked them what was so fun about it, they told me its because it was a roleplay server to play as cops and robbers. This led 
+                                          | me to hop on and play too! Then I realized the developers also created an API so that others can join and create mods as well. 
+                                          | Thus, I created a mod that I uploaded on thier community website for others to enjoy as my friends did on thier server. The mod now has 
+                                          | over 1,100 downloads and couldnt have been done without the help of the FivePD community.
+                                        p.p-2 Test laksjdflaskjd klajsdlk jaslkdj alkjd lkajdlkj alksjdl kadlkja lkdjlaks dlajld 
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Visualization Web Application
@@ -141,7 +145,7 @@ html
                             .row
                                 .col-8.border-right
                                     img.img-fluid(src="img/visualization.png" alt="Visualization Site Image")
-                                .col.ml-3
+                                .col.ml-3.varela
                                     .row.mb-2
                                         h4 Data Visualization Web Application
                                     .row.flex-wrap
@@ -152,9 +156,18 @@ html
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Ajax/jQuery
                                         p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
-                                    .row.mt-1
-                                        p Data Visualization Web application created to utilize different charts to show patterns or trends with the data given. 
-                                          | Praesent a ante metus. 
+                                    .row.mt-1.scroll.summary
+                                        p.p-2 On this project, I developed a web application for users who want to visualize and study trends on the data they upload or retrieve. 
+                                          | This application allows them to login, save personal settings, and retrieve 3 data sets from a MySQL database. They can also upload thier own excel 
+                                          | csv file if they want to. The application also features a variety of charts that can be viewed. They can view thier data either on a table, bar chart, line chart, 
+                                          | or pie chart. It also features an interactive map that highlights the states in color based on the state count of the data.
+                                          
+                                        p.p-2 For the network implementation part of the project, the MySQL database is hosted and running on my own Rasberry Pi 3 at home.
+                                          | There had to be a configuration setup for the networking of the database to work. The reason being, the database had to be accessed from a seperate server. 
+                                          | The main project, with the PHP, HTML, JavaScript, and more, is being hosted on a free web hosting platform called 000webhost.com. Therefore, I had to open ports
+                                          | and create a user account on my own MariaDB server. This allowed for the database to be accessed from the 000webhost servers safely. I could write more about this
+                                          | project, like how the charts are drawn and how they handle the data and so on, but I would have to write an essay! If you would like to know more about this 
+                                          | project, please go to my contact page and get in touch!
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/footer.pug

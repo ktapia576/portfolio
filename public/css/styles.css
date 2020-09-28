@@ -1,10 +1,15 @@
-.pointer {
-    cursor: pointer;
+.varela {font-family: 'Varela', sans-serif;}
+
+.summary {font-size: .95rem;}
+
+.pointer {cursor: pointer;}
+
+.scroll {
+    height:40vh;
+    overflow-y: scroll;
 }
 
-.text-grey {
-    color: #bfbfbf;
-}
+.text-grey {color: #bfbfbf;}
 
 /* Overwrite modal-lg from 800px to 80% of viewport */
 .modal-lg {
@@ -37,11 +42,12 @@ h4 {font-size:1rem;}
 /* (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     h1 {font-size:6rem;}  
-    h4 {font-size:1.5rem;}  
+    h4 {font-size:1.5rem;} 
 }
 
 /* (large desktops, 1930px and up) */
 @media (min-width: 1930px) {  
     h1 {font-size:7.5rem;}  
-    h4 {font-size:1.8rem;}  
+    h4 {font-size:1.8rem;}
+    .summary {font-size: 1rem;}  
 }
