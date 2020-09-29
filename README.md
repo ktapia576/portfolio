@@ -1,2 +1,2 @@
-# digital-ocean-server
-My Website hosted by Digital Ocean.
+# portfolio
+My Website hosted on Digital Ocean Droplet.
