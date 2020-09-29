@@ -59,57 +59,48 @@ html
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
+                        h5.modal-title Virtual Assistant
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
-                    .modal-body
-                        .container
-                            .row
-                                .col-8.border-right
-                                    img.img-fluid(src="img/assistant2.png" alt="Virtual Assistant Image")
-                                .col.ml-3
-                                    .row.mb-2
-                                        h4 Virtual Assistant
-                                    .row.flex-wrap
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Bootstrap 4
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Handlebars.js
-                                    .row.mt-1
-                                        p Mental Health Virtual Assistant created ... This virtual assitant will help raise awareness and provide tools for users.
-                                          | Praesent 
-                    .modal-footer
+                    .modal-body.m-3
+                        .row.flex-wrap.justify-content-center
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Bootstrap 4
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Handlebars.js
+                        .row.mx-2.mt-1
+                            ul.list-group.list-group-flush
+                                li.list-group-item - Implemented a virtual assistant in a web application to assist users on the topic of mental health awareness.  
+                                li.list-group-item - Features a chat with a virtual assistant who asks questions for the user to answer and takes notes based off the answers.    
+                    .modal-footer.border-0
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of Portfolio
         .modal.fade.bd-example-modal-lg(id="portfolioModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
+                        h5.modal-title Portfolio Website
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
-                    .modal-body
-                        .container
-                            .row
-                                .col-8.border-right
-                                    img.img-fluid(src="img/portfolio2.png" alt="Portfolio Image")
-                                .col.ml-3
-                                    .row.mb-2
-                                        h4 Portfolio Website
-                                    .row.flex-wrap
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Bootstrap 4
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 NGINX
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Pug.js
-                                    .row.mt-1
-                                        p This portfolio website was built from the ground up using a Digital Ocean Droplet. Server configurations and networking 
-                                          | had to be setup for it to work properly.
-                    .modal-footer
+                    .modal-body.m-3
+                        .row.flex-wrap.justify-content-center
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Bootstrap 4
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 NGINX
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Pug.js
+                        .row.mx-2.mt-1
+                           ul.list-group.list-group-flush
+                                li.list-group-item - Developed and hosted on a Digital Ocean Droplet while being served using NGINX as reverse proxy for security
+                                li.list-group-item - Automates the renewal of an HTTPS Certificate using Let's Encrypt on Ubuntu 20
+                                li.list-group-item - Uses Node.js for the server side and utilizes Pug.js as a template engine for serving HTML pages
+                    .modal-footer.border-0
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         //- Modal for image preview of FivePD Mod
         .modal.fade.bd-example-modal-lg(id="gtaModModal" tabindex="-1")
@@ -119,20 +110,18 @@ html
                         h5.modal-title Grand Theft Auto V Mod
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
-                    .modal-body
-                        .container
-                            .row.flex-wrap
-                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 C#
-                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
-                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
-                                p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
-                            .row.mt-1.summary
-                                p This project came to be when a couple of my friends were always seen playing together on thier own modded Grand Theft Auto V server. 
-                                    | When I asked them what was so fun about it, they told me its because it was a roleplay server to play as cops and robbers. This led 
-                                    | me to hop on and play too! Then I realized the developers also created an API so that others can join and create mods as well. 
-                                    | Thus, I created a mod that I uploaded on thier community website for others to enjoy as my friends did on thier server. The mod now has 
-                                    | over 1,100 downloads and couldnt have been done without the help of the FivePD community.
-                    .modal-footer
+                    .modal-body.m-3       
+                        .row.flex-wrap.justify-content-center
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 C#
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Object Oriented
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 FivePD API
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Git
+                        .row.mx-2.mt-1
+                            ul.list-group.list-group-flush
+                                li.list-group-item - Developed a GTA V mod for users to download and install on their own GTA V servers. 
+                                li.list-group-item - Creates a scenario that features 4 different outcomes and randomization during gameplay. 
+                                li.list-group-item - Achieved over 1,100 unique downloads on the community website.  
+                    .modal-footer.border-0
                         a.btn.btn-outline-dark(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
@@ -141,26 +130,25 @@ html
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
                     .modal-header
+                        h5.modal-title Data Visualization Web Application
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
-                    .modal-body
-                        .container
-                            .row
-                                .col-8.border-right
-                                    img.img-fluid(src="img/visualization.png" alt="Visualization Site Image")
-                                .col.ml-3.varela
-                                    .row.mb-2
-                                        h4 Data Visualization Web Application
-                                    .row.flex-wrap
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 PHP
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 MySQL/MariaDB
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Ajax/jQuery
-                                        p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
-                                    .row.mt-1.scroll.summary
-
-                    .modal-footer
+                    .modal-body.m-3
+                        .row.flex-wrap.justify-content-center
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 PHP
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 MySQL/MariaDB
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Ajax/jQuery
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Linux
+                        .row.mx-2.mt-1
+                            ul.list-group.list-group-flush
+                                li.list-group-item - Developed a web application for users who want to visualize and study trends on the data they upload or retrieve.
+                                li.list-group-item - Allows users to login, save personal settings, and retrieve 3 data sets from a MySQL database.
+                                li.list-group-item - Features a variety of tools, including table, bar, line, pie charts, and an interactive map that highlights states in color.
+                    .modal-footer.border-0
+                        a.btn.btn-outline-dark(href="https://visualization.kevintapia.com" target="_blank" role="button") Demo
+                        a.btn.btn-outline-dark(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/contact-bar.pug
