@@ -8,7 +8,7 @@ html
                 .row
                     .col-md-4
                         .card.mb-4.shadow
-                            img.card-img-top.border-bottom.pointer(src="img/visualization.png" alt="Visualization Image" data-toggle="modal" data-target="#visualizationModal")
+                            img.card-img-top.border-bottom.pointer(src="img/visualization.png" alt="Visualization Image" data-toggle="modal" data-target="#visualizationImage")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Data Visualization Web Application
                                 p.card-text.text-center For users who want to visualize and study trends on data with tools
@@ -20,7 +20,7 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow
-                            img.card-img-top.border-bottom.pointer(src="img/assistant.png" alt="Virtual Assitant Image" data-toggle="modal" data-target="#assistantModal")
+                            img.card-img-top.border-bottom.pointer(src="img/assistant.png" alt="Virtual Assitant Image" data-toggle="modal" data-target="#assistantImage")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Virtual Assistant
                                 p.card-text.text-center Asks questions for the user and takes notes based off of thier answers
@@ -32,7 +32,7 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/Virtual-Assistant-Mental-Health" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
-                            img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioModal")
+                            img.card-img-top.pointer(src="img/portfolio.png" alt="Portfolio Image" data-toggle="modal" data-target="#portfolioImage")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Portfolio Website
                                 p.card-text.text-center Built on a Digital Ocean Droplet needing server configurations
@@ -43,7 +43,7 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow-sm
-                            img.card-img-top.border-bottom.pointer(src="img/fivepdapi.png" alt="FivePD API Image" data-toggle="modal" data-target="#gtaModModal")
+                            img.card-img-top.border-bottom.pointer(src="img/chasingImage.png" alt="FivePD API Image" data-toggle="modal" data-target="#gtaModImage")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Grand Theft Auto V Mod
                                 p.card-text.text-center A created mod that has achieved over 1,100 unique downloads
@@ -53,7 +53,7 @@ html
                                     .btn-group
                                         a.btn.btn-sm.btn-outline-secondary(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
-        //- Modal for image preview of Virtual assistant
+        //- Modal for info of Virtual assistant
         .modal.fade.bd-example-modal-lg(id="assistantModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
@@ -78,7 +78,7 @@ html
                         a.btn.btn-outline-dark(href="https://assistant.kevintapia.com" target="_blank" role="button") Demo
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/Virtual-Assistant-Mental-Health" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
-        //- Modal for image preview of Portfolio
+        //- Modal for info of Portfolio
         .modal.fade.bd-example-modal-lg(id="portfolioModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
@@ -105,7 +105,7 @@ html
                     .modal-footer.border-0
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
-        //- Modal for image preview of GTA V Mod
+        //- Modal for info of GTA V Mod
         .modal.fade.bd-example-modal-lg(id="gtaModModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
@@ -128,7 +128,7 @@ html
                         a.btn.btn-outline-dark(href="https://gtapolicemods.com/index.php?/files/file/1171-suspicious-person-callout-multiple-outcomes/" target="_blank" role="button") Website
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/SuspiciousPersonCallout/blob/master/SuspiciousPersonCallout.cs" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
-        //- Modal for image preview of Visualization Web Application
+        //- Modal for info of Visualization Web Application
         .modal.fade.bd-example-modal-lg(id="visualizationModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
                 .modal-content
@@ -153,5 +153,53 @@ html
                     .modal-footer.border-0
                         a.btn.btn-outline-dark(href="https://visualization.kevintapia.com" target="_blank" role="button") Demo
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image enlarge of Visualization Web Application
+        .modal.fade.bd-example-modal-lg(id="visualizationImage" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title Data Visualization Web Application
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        img.img-fluid(src="img/visualization.png" alt="Visualization Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image enlarge of Virtual Assitant
+        .modal.fade.bd-example-modal-lg(id="assistantImage" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title Virtual Assistant
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        img.img-fluid(src="img/assistant2.png" alt="Virtual Assitant Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image enlarge of Portfolio
+        .modal.fade.bd-example-modal-lg(id="portfolioImage" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title Portfolio Website
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        img.img-fluid(src="img/portfolio2.png" alt="Portfolio Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image enlarge of GTA V Mod
+        .modal.fade.bd-example-modal-lg(id="gtaModImage" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title Grand Theft Auto V Mod
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        img.img-fluid(src="img/chasingImage.png" alt="GTA V Mod Image")
+                    .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/contact-bar.pug

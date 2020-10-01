@@ -4,6 +4,11 @@
 
 .min-vh-95 {min-height: 95vh;}
 
+.enlarge {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 h1 {font-size:3rem;}
 h4 {font-size:1rem;} 
 
