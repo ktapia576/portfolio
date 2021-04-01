@@ -20,6 +20,18 @@ html
                                         a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/visualization-website" target="_blank" role="button") Code
                     .col-md-4
                         .card.mb-4.shadow
+                            img.card-img-top.border-bottom.pointer(src="img/csgotracker.png" alt="CSGO Tracker Image" data-toggle="modal" data-target="#csgotrackerImage")
+                            .card-body
+                                p.card-text.text-center.font-weight-bold CS:GO Stat Tracker
+                                p.card-text.text-center Vue.js application to allow users to see a player's in game stats
+                                .d-flex.justify-content-between.align-items-center
+                                    .btn-group
+                                        a.btn.btn-sm.btn-outline-secondary.pointer(tabindex="0" data-toggle="modal" data-target="#csgotrackerModal" role="button") Info
+                                    .btn-group
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://csgotracker.kevintapia.com" target="_blank" role="button") Demo
+                                        a.btn.btn-sm.btn-outline-secondary(href="https://github.com/ktapia576/csgo-tracker" target="_blank" role="button") Code
+                    .col-md-4
+                        .card.mb-4.shadow
                             img.card-img-top.border-bottom.pointer(src="img/assistant.png" alt="Virtual Assitant Image" data-toggle="modal" data-target="#assistantImage")
                             .card-body
                                 p.card-text.text-center.font-weight-bold Virtual Assistant
@@ -100,13 +112,44 @@ html
                             p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Pug.js
                         .row.mx-2.mt-1
                            ul.list-group.list-group-flush
-                                li.list-group-item - Developed and hosted on a Digital Ocean Droplet while being served using NGINX as reverse proxy for security.
+                                li.list-group-item - Hosted on a Digital Ocean Droplet using NGINX as reverse proxy for security and subdomain handling.
                                 li.list-group-item - Automates the renewal of an HTTPS Certificate using Let's Encrypt on Ubuntu 20.
                                 li.list-group-item - Uses Node.js for the server side and utilizes Pug.js as a template engine for serving HTML pages.
                                 li.list-group-item - Designed and implented from scratch using the framework Bootstrap 4.
                     .modal-footer.border-0
                         a.btn.btn-outline-dark(href="https://github.com/ktapia576/portfolio" target="_blank" role="button") Code
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for info of CSGO Tracker
+        .modal.fade.bd-example-modal-lg(id="csgotrackerModal" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title CS:GO Stat Tracker
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        .row.flex-wrap.justify-content-center
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Vue.js
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Vue-router
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 JavaScript
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Bootstrap 4
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 CSS3
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 HTML5
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Node.js
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Express
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Axios
+                            p.d-inline.bg-secondary.rounded.text-white.p-1.mr-2 Tracker Network API
+                        .row.mx-2.mt-1
+                            ul.list-group.list-group-flush
+                                li.list-group-item - Developed web application displaying 7 realtime profile career stats using Tracker Network API
+                                li.list-group-item - Utilized Vue.js Single File Component System to easily reuse and organize components
+                                li.list-group-item - Used vue-router to handle 2 routes between the home page and show profile page
+                                li.list-group-item - Handled API requests in the front-end and back-end using Axios
+                                li.list-group-item - Made use of Node.js config.env to handle production and development enviroment separately
+                    .modal-footer.border-0
+                        a.btn.btn-outline-dark(href="https://csgotracker.kevintapia.com" target="_blank" role="button") Demo
+                        a.btn.btn-outline-dark(href="https://github.com/ktapia576/csgo-tracker" target="_blank" role="button") Code
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close 
         //- Modal for info of GTA V Mod
         .modal.fade.bd-example-modal-lg(id="gtaModModal" tabindex="-1")
             .modal-dialog.modal-lg.modal-dialog-centered
@@ -201,7 +244,19 @@ html
                         button(type="button" class="close" data-dismiss="modal")
                             span &times;
                     .modal-body.m-3
-                        img.img-fluid(src="img/chasingImage.png" alt="GTA V Mod Image")
+                        img.img-fluid(src="img/chasingImage1.png" alt="GTA V Mod Image")
+                    .modal-footer
+                        button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+        //- Modal for image enlarge of CSGO tracker
+        .modal.fade.bd-example-modal-lg(id="csgotrackerImage" tabindex="-1")
+            .modal-dialog.modal-lg.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title CS:GO Tracker
+                        button(type="button" class="close" data-dismiss="modal")
+                            span &times;
+                    .modal-body.m-3
+                        img.img-fluid(src="img/csgotracker2.png" alt="CSGO Tracker Image")
                     .modal-footer
                         button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
         include includes/contact-bar.pug
